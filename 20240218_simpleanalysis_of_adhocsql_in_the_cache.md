@@ -6,4 +6,8 @@ Interestingly they have optimize for adhoc SQL enabled but not the database opti
 
 Still the question is how can one get a handle on 150000 different adhoc SQL plans in the cache - certainly too many to browse through.
 In this particular database there are about 1000 tables so it seemed like a good approach would be to concentrate on the tables that each query targets
-and ignore the columns and the where criteria.
+and ignore the columns and the where criteria on the working theory that this is where the dynamic SQL is concentrated.
+
+'''
+SELECT * FROM x
+'''
